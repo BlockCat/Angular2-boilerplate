@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="./assets/logo.png" alt="Angular.io" width="112" height="28">
+    </a>
+    <div class="navbar-burger burger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="navbar-menu" [class.is-active]="clicked">
+    <div class="navbar-start">
+      <div class="navbar-item" routerLink="/home" (click)="toggleMenu()">
+        <a>Home</a>
+      </div>
+      <hr class="navbar-divider">
+      <div class="navbar-item" routerLink="/about" (click)="toggleMenu()">
+        <a>About</a>
+      </div>
+      <hr class="navbar-divider">
+      <div class="navbar-item">
+        Link 3
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        Right
+      </div>
+    </div>
+  </div>
+</nav>
