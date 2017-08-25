@@ -7,6 +7,7 @@ import { Actions } from './authentication.actions';
 export class AuthenticationService {
 
   @select(state => state.authentication.isLoggedIn) private readonly isLoggedIn$: Observable<boolean>;
+  @select(state => state.authentication.token) public readonly token$: Observable<boolean>;
 
   constructor() { }
 

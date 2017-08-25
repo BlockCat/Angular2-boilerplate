@@ -14,7 +14,7 @@ export class AuthenticationActions extends ActionReducer<AuthenticationState> {
 
   @reducer(Actions.LOG_IN)
   logIn(state, action): AuthenticationState {
-    return {...state, isLoggedIn: true, token: action.token};
+    return {...state, isLoggedIn: true, token: action.payload.token};
   }
 
   @reducer(Actions.LOG_OUT)

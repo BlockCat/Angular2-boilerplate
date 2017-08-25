@@ -24,10 +24,12 @@
       </div>
     </div>
     <div class="navbar-end">
-      <!-- If logged in -->
+      <!-- If logged out -->
       <div class="navbar-item" *ngIf="!(authentication.isLoggedIn() | async)">
         <a (click)="setLoginModal(true)">Login</a>
       </div>
+
+      <!--- If logged in -->
       <div class="navbar-item has-dropdown is-hoverable" *ngIf="authentication.isLoggedIn() | async">
         <a class="navbar-link">
           Account
