@@ -13,8 +13,4 @@ import {AuthenticationService} from './authentication/authentication.service';
 })
 export class AppComponent {
   title = config.title;
-
-  @dispatch() add(amount) {
-    return { type: 'ADD', payload: {}};
-  }
 }
