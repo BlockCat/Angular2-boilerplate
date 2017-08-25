@@ -10,5 +10,10 @@
 <section class="section">
   <div class="container">
     <p>Welcome to this page</p>
+
+    <h1>You are currently: <span *ngIf="!(authentication.isLoggedIn() | async)">Logged out</span><span *ngIf="authentication.isLoggedIn() | async">Logged in</span></h1>
+    <div class="tile box">
+      Test?
+    </div>
   </div>
 </section>
