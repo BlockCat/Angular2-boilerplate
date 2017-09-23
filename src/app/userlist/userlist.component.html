@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table is-fullwidth is-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Last name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.age}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
